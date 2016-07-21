@@ -126,3 +126,9 @@ Naoya Murakami naoya@createfield.com
 
 Public domain. You can copy and modify this project freely.
 
+
+## Additional Content for Rosette
+In the case of Rosette use, you need to prepare the following files under the project dir.
+
+- rlp-license.xml
+- rlp-with-rws-7.14.0-sdk-amd64-glibc25-gcc41.tar.gz
