@@ -58,3 +58,12 @@ RUN rm -rf mecab-0.996.tar.gz*
 RUN rm -rf mecab-ipadic-2.7.0-20070801.tar.gz*
 RUN rm -rf word2vec.local.tgz*
 
+# Additional description for Rosette
+RUN mkdir /usr/local/BasisTech/BT_RLP_7.14.0
+ENV BT_ROOT /usr/local/BasisTech/BT_RLP_7.14.0
+ENV BT_BUILD amd64-glibc25-gcc41
+ADD rlp-with-rws-7.14.0-sdk-amd64-glibc25-gcc41.tar.gz /usr/local/BasisTech/BT_RLP_7.14.0/rlp-with-rws-7.14.0-sdk-amd64-glibc25-gcc41.tar.gz 
+RUN cd /usr/local/BasisTech/BT_RLP_7.14.0 ; tar zxf rlp-with-rws-7.14.0-sdk-amd64-glibc25-gcc41.tar.gz
+ADD rlp-license.xml /usr/local/BasisTech/BT_RLP_7.14.0/rlp/rlp/licenses/rlp-license.xml
+
+ 
