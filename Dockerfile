@@ -64,5 +64,4 @@ ENV BT_ROOT /usr/local/BasisTech/BT_RLP_7.14.0
 ENV BT_BUILD amd64-glibc25-gcc41
 ADD rlp-with-rws-7.14.0-sdk-amd64-glibc25-gcc41.tar.gz /usr/local/BasisTech/BT_RLP_7.14.0 
 ADD rlp-license.xml /usr/local/BasisTech/BT_RLP_7.14.0/rlp/rlp/licenses/rlp-license.xml
-
- 
+ENV PATH $PATH:$BT_ROOT/rlp/bin/$BT_BUILD

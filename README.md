@@ -132,3 +132,8 @@ In the case of Rosette use, you need to prepare the following files under the pr
 
 - rlp-license.xml
 - rlp-with-rws-7.14.0-sdk-amd64-glibc25-gcc41.tar.gz
+
+動作確認には次のコマンドなどを用います。なお、`-l jpn`及び`sampletext`は必要に応じて、形態素解析をしたい対象ファイルを指定してください。
+
+`rlp -l jpn -root $BT_ROOT $BT_ROOT/rlp/etc/rlp-environment.xml $BT_ROOT/rlp/samples/etc/rlp-bl-context.xml sampletext`
+
